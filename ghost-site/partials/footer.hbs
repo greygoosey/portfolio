@@ -1,0 +1,43 @@
+<footer class="site-footer container">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <div class="copyright">
+                {{@site.title}} © {{date format="YYYY"}}
+            </div>
+        </div>
+
+        <nav class="footer-nav">
+            {{navigation type="secondary"}}
+        </nav>
+
+        <div class="footer-right">
+            <div class="social">
+                {{#if @site.facebook}}
+                    <a class="social-item social-item-facebook"
+                        href="{{facebook_url @site.facebook}}" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook">
+                        {{> icons/facebook}}
+                    </a>
+                {{/if}}
+
+                {{#if @site.twitter}}
+                    <a class="social-item social-item-twitter"
+                        href="{{twitter_url @site.twitter}}" target="_blank"
+                        rel="noopener noreferrer" aria-label="Twitter">
+                        {{> icons/twitter}}
+                    </a>
+                {{/if}}
+                <a class="social-item social-item-linkedin"
+                    href="https://www.linkedin.com/in/jordansukenik/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    {{> icons/linkedin}}
+                </a>
+                <a class="social-item social-item-github"
+                    href="https://github.com/linuxgoose" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub">
+                    {{> icons/github}}
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

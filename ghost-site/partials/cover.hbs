@@ -1,0 +1,20 @@
+<div class="cover{{#if @site.cover_image}} image-loading{{/if}}">
+    {{#if @site.cover_image}}
+        <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
+    {{/if}}
+
+    <div class="cover-content container">
+        <div class="cover-light-title">{{@site.title}}</div>
+        {{#if @site.description}}
+            <div class="cover-description">{{@site.description}}</div>
+        {{/if}}
+        <div class="cover-form">
+            <a href="https://jordansukenik.com/contact" class="cover-button">Contact</a>
+            {{#if @site.twitter}}
+            <a href="{{twitter_url @site.twitter}}" target="_blank" class="cover-button">{{> icons/twitter}}</a>
+            {{/if}}
+            <a href="https://www.linkedin.com/in/jordansukenik/" target="_blank" class="cover-button">{{> icons/linkedin}}</a>
+            <a href="https://github.com/linuxgoose" target="_blank" class="cover-button">{{> icons/github}}</a>
+        </div>
+    </div>
+</div>
