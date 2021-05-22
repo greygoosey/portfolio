@@ -1,6 +1,6 @@
 # personal-website
 
-My personal website - the internet home of Jordan Sukenik.
+My personal website template.
 
 ## Platform
 
